@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kopsteng, home cafe untuk kopi dari bar, comfort food hangat, dan meja panjang yang tidak terburu-buru. Buka setiap hari.">
+  <meta name="theme-color" content="#0e0906">
+  <title>Kopsteng | Coffee, Comfort Food &amp; Home Cafe</title>
+  <script>
+    (function () {
+      var h = document.documentElement;
+      h.classList.add("js-motion");
+      try {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        if (sessionStorage.getItem("ks-nav")) { h.classList.add("is-arriving"); sessionStorage.removeItem("ks-nav"); }
+        else if (!sessionStorage.getItem("ks-intro")) h.classList.add("intro-on");
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body data-page="home">
+  <div class="intro" aria-hidden="true">
+    <p class="intro__word"><span>K</span><span>o</span><span>p</span><span>s</span><span>t</span><span>e</span><span>n</span><span>g</span></p>
+    <div class="intro__meta"><span>Coffee, comfort food &amp; home cafe</span><span class="intro__count">000</span></div>
+    <span class="intro__bar"></span>
+  </div>
+  <div class="curtain" aria-hidden="true"><div class="curtain__inner"><span class="logo-badge"><img src="foto kopsteng/logo.webp" alt="" width="512" height="512"></span><span class="curtain__word">Kopsteng</span></div></div>
+  <div id="site-header"></div>
+  <main id="konten">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <div class="hero__frame">
+          <img class="hero__img" src="foto kopsteng/bar.webp" alt="" width="680" height="425" fetchpriority="high">
+          <div class="hero__shade"></div>
+          <div class="hero__stage">
+            <div class="spot spot--below" style="--x: 58%; --y: 46%" data-hero-anim>
+              <span class="spot__dot" aria-hidden="true"></span>
+              <span class="spot__line" aria-hidden="true"></span>
+              <article class="spot-card">
+                <img src="foto kopsteng/americano.webp" alt="" width="68" height="68">
+                <div class="spot-card__body">
+                  <b>Americano</b>
+                  <small>Diracik di bar espresso</small>
+                  <span class="spot-card__price">Rp 18.000</span>
+                </div>
+                <button type="button" class="spot-card__add" data-add-to-cart="americano" aria-label="Tambah Americano ke keranjang"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+              </article>
+            </div>
+            <div class="spot" style="--x: 79%; --y: 44%" data-hero-anim>
+              <span class="spot__dot" aria-hidden="true"></span>
+              <span class="spot__line" aria-hidden="true"></span>
+              <article class="spot-card">
+                <img src="foto kopsteng/latte.webp" alt="" width="68" height="68">
+                <div class="spot-card__body">
+                  <b>Caffe Latte</b>
+                  <small>Espresso dan susu lembut</small>
+                  <span class="spot-card__price">Rp 23.000</span>
+                </div>
+                <button type="button" class="spot-card__add" data-add-to-cart="caffe-latte" aria-label="Tambah Caffe Latte ke keranjang"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="hero__title" id="hero-title" data-hero-anim>
+        <span class="hero__title-line"><span data-hero-chars>Kopsteng</span></span>
+        <span class="hero__title-line hero__title-line--serif"><span>home cafe</span></span>
+      </h1>
+      <div class="shell hero__bottom">
+        <div class="hero__intro" data-hero-anim>
+          <p class="hero__lede" data-hero-fade>Singgah sebentar, betah lebih lama.</p>
+          <p class="hero__text" data-hero-fade>Kopi dari bar yang bisa kamu lihat langsung, makanan hangat dari dapur, dan meja panjang untuk menemani harimu. <span class="serif">(buka setiap hari)</span></p>
+          <div class="hero__actions" data-hero-fade>
+            <a class="btn btn-gold btn-lg" href="produk.html" data-magnetic>Jelajahi menu <svg class="i-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-glass btn-lg" href="tentang.html">Tentang Kopsteng</a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#cerita" aria-label="Gulir ke cerita Kopsteng" data-hero-anim data-magnetic>
+          <svg class="scroll-cue__ring" viewBox="0 0 100 100" aria-hidden="true">
+            <defs><path id="cue-circle" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs>
+            <text><textPath href="#cue-circle" textLength="232" lengthAdjust="spacing">Gulir ke bawah · Kopsteng · </textPath></text>
+          </svg>
+          <span class="scroll-cue__btn" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 2.5v11m-4.5-4.5L8 13.5 12.5 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="cerita" aria-labelledby="cerita-title">
+      <div class="shell">
+        <p class="kicker"><b>(01)</b> Cerita Kopsteng</p>
+        <div class="statement-wrap">
+          <h2 class="statement" id="cerita-title" data-scrub-words>Kopi yang diracik di depanmu, makanan hangat dari dapur, dan meja panjang yang tidak pernah terburu-buru. Itu <em>rasa rumah</em> versi Kopsteng.</h2>
+          <div class="statement-side" data-reveal>
+            <p>Kopsteng adalah home cafe untuk menikmati kopi dan comfort food dalam suasana hangat dan santai, sendiri atau bersama teman.</p>
+            <a class="link-line" href="tentang.html">Baca cerita kami <svg class="i-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div class="facts" data-reveal-group>
+          <div class="fact"><p class="fact__num mb-0"><span data-count="6" data-pad="2">06</span><small>menu</small></p><p class="fact__label">Kopi dan comfort food andalan</p></div>
+          <div class="fact"><p class="fact__num mb-0"><span data-count="7">7</span><small>hari</small></p><p class="fact__label">Buka setiap hari, Senin sampai Minggu</p></div>
+          <div class="fact"><p class="fact__num mb-0"><span data-count="14">14</span><small>jam</small></p><p class="fact__label">Senin–Sabtu, dari 09.00 sampai 23.00</p></div>
+          <div class="fact"><p class="fact__num mb-0"><span data-count="15">15</span><small>ribu</small></p><p class="fact__label">Harga menu mulai dari Rp 15.000</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hmenu" aria-labelledby="menu-title">
+      <div class="hmenu__viewport">
+        <div class="hmenu__track">
+          <div class="hmenu__intro">
+            <div>
+              <p class="kicker"><b>(02)</b> Menu andalan</p>
+              <h2 class="section-title" id="menu-title" data-split>Dari bar <em>&amp; dapur</em></h2>
+            </div>
+            <div>
+              <p>Enam menu yang paling sering menemani meja kami. Geser untuk melihat semuanya, tambahkan langsung ke keranjang.</p>
+              <a class="link-line" href="produk.html">Lihat semua menu <svg class="i-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+          <div class="hmenu__cards" id="featured-products"></div>
+        </div>
+      </div>
+      <div class="shell hmenu__foot" aria-hidden="true">
+        <div class="hmenu__progress"><span></span></div>
+        <span class="hmenu__count">01 / 06</span>
+      </div>
+    </section>
+
+    <section class="section on-paper-section" aria-labelledby="ruang-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="kicker"><b>(03)</b> Ruang Kopsteng</p>
+            <h2 class="section-title" id="ruang-title" data-split>Tempat untuk <em>betah</em> lebih lama</h2>
+          </div>
+          <p class="section-head__side" style="color: var(--paper-muted)">Tiga hal yang membuat orang duduk lebih lama dari rencananya.</p>
+        </div>
+        <div class="chapters__grid">
+          <div class="chapters__visual" aria-hidden="true">
+            <img src="foto kopsteng/tempat.webp" alt="" width="510" height="510" loading="lazy">
+            <img src="foto kopsteng/latte.webp" alt="" width="382" height="510" loading="lazy">
+            <img src="foto kopsteng/mix platter.webp" alt="" width="403" height="510" loading="lazy">
+            <span class="chapters__visual-no" data-chapter-no>01 / 03</span>
+          </div>
+          <div>
+            <article class="chapter">
+              <div class="chapter__img"><img src="foto kopsteng/tempat.webp" alt="Ruang Kopsteng dengan meja kayu panjang dan lampu hangat di sepanjang bar" width="510" height="510" loading="lazy"></div>
+              <p class="chapter__no">01</p>
+              <h3>Ruang yang lapang</h3>
+              <p>Meja kayu panjang, kursi yang nyaman, dan lampu hangat di sepanjang bar. Datang sendiri atau bersama teman, selalu ada tempat untuk duduk.</p>
+            </article>
+            <article class="chapter">
+              <div class="chapter__img"><img src="foto kopsteng/latte.webp" alt="Dua cangkir caffe latte dengan latte art" width="382" height="510" loading="lazy"></div>
+              <p class="chapter__no">02</p>
+              <h3>Diracik di bar</h3>
+              <p>Espresso untuk latte dan americano diracik di bar yang bisa kamu lihat langsung, lengkap dengan latte art di atas cangkirnya.</p>
+            </article>
+            <article class="chapter">
+              <div class="chapter__img"><img src="foto kopsteng/mix platter.webp" alt="Mix fries dengan dua saus dalam keranjang besi" width="403" height="510" loading="lazy"></div>
+              <p class="chapter__no">03</p>
+              <h3>Untuk dinikmati bersama</h3>
+              <p>Mix fries, katsu, dan nasi goreng disajikan hangat dari dapur, pas untuk menemani obrolan yang panjang.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pair-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="kicker"><b>(04)</b> Pasangan favorit</p>
+            <h2 class="section-title" id="pair-title" data-split>Satu kopi, <em>satu teman makan</em></h2>
+          </div>
+          <p class="section-head__side">Kombinasi dari menu kami. Tambahkan keduanya ke keranjang sekali klik, harganya tetap harga menu.</p>
+        </div>
+        <div class="pairs" id="pairs" data-reveal-group></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span class="ticker__item">Kopi</span><span class="ticker__item"><em>comfort food</em></span><span class="ticker__item">Home cafe</span><span class="ticker__item"><em>Kopsteng</em></span>
+        <span class="ticker__item">Kopi</span><span class="ticker__item"><em>comfort food</em></span><span class="ticker__item">Home cafe</span><span class="ticker__item"><em>Kopsteng</em></span>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="visit-title">
+      <div class="shell visit">
+        <div>
+          <p class="kicker"><b>(05)</b> Mampir</p>
+          <p class="status-pill" data-open-status><span class="status-dot" aria-hidden="true"></span><span data-status-text>Buka setiap hari</span><small data-status-detail>09.00–23.00</small></p>
+          <h2 class="section-title" id="visit-title" data-split>Mampir <em>hari ini</em></h2>
+          <p class="visit__lead">Datang untuk segelas kopi, makan siang, atau duduk lama sampai malam. Kopsteng buka setiap hari.</p>
+          <div class="visit__actions">
+            <a class="btn btn-gold btn-lg" href="produk.html" data-magnetic>Pesan dari menu <svg class="i-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-glass btn-lg" href="kontak.html">Hubungi kami</a>
+          </div>
+        </div>
+        <div class="clock" data-reveal>
+          <p class="clock__label mb-0">Jam buka hari ini</p>
+          <p class="clock__time"><span data-today-open>09.00</span><em>sampai</em><span data-today-close>23.00</span></p>
+          <ul class="hours" data-hours>
+            <li><span>Senin–Sabtu</span><span>09.00–23.00</span></li>
+            <li><span>Minggu</span><span>16.00–23.00</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0" aria-labelledby="cta-title">
+      <div class="shell">
+        <div class="cta" data-reveal>
+          <p class="kicker"><b>(06)</b> Pesan sekarang</p>
+          <h2 class="cta__title" id="cta-title" data-split>Kopi sudah siap, <em>tinggal kamu.</em></h2>
+          <p>Pilih menu, tinjau pesananmu di keranjang, lalu checkout dalam beberapa langkah.</p>
+          <div class="cta__actions">
+            <a class="btn btn-gold btn-lg" href="produk.html" data-magnetic>Mulai pesan <svg class="i-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-glass btn-lg" href="keranjang.html">Lihat keranjang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

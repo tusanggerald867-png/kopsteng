@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kenali Kopsteng, home cafe untuk kopi, comfort food, dan waktu santai.">
+  <meta name="theme-color" content="#0e0906">
+  <title>Kopsteng | Tentang Kami</title>
+  <script>
+    (function () {
+      var h = document.documentElement;
+      h.classList.add("js-motion");
+      try {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        if (sessionStorage.getItem("ks-nav")) { h.classList.add("is-arriving"); sessionStorage.removeItem("ks-nav"); }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body data-page="about">
+  <div class="curtain" aria-hidden="true"><div class="curtain__inner"><span class="logo-badge"><img src="foto kopsteng/logo.webp" alt="" width="512" height="512"></span><span class="curtain__word">Kopsteng</span></div></div>
+  <div id="site-header"></div>
+  <main id="konten">
+    <section class="page-hero">
+      <div class="shell">
+        <p class="kicker" data-hero-anim data-hero-fade><b>(Tentang)</b> Coffee, comfort food &amp; home cafe</p>
+        <h1 class="page-hero__title" data-hero-anim data-split-hero>Cerita <em>Kopsteng</em></h1>
+        <div class="page-hero__row" data-hero-anim data-hero-fade>
+          <p class="page-hero__lead">Kopsteng adalah tempat untuk menikmati kopi dan makanan favorit dalam suasana yang hangat dan santai.</p>
+          <div class="page-hero__meta"><span><b>7</b>hari buka</span><span><b>09.00</b>buka Senin–Sabtu</span><span><b>23.00</b>tutup setiap hari</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="story-title">
+      <div class="shell about-split">
+        <button type="button" class="photo-trigger about-photo" data-clip data-parallax data-cursor="Lihat" data-photo-src="foto kopsteng/tempat.webp" data-photo-alt="Suasana nyaman di dalam cafe Kopsteng" aria-label="Perbesar foto suasana cafe Kopsteng">
+          <img src="foto kopsteng/tempat.webp" alt="" width="510" height="510" loading="lazy">
+        </button>
+        <div class="about-text">
+          <p class="kicker"><b>(01)</b> Home cafe</p>
+          <h2 class="visually-hidden" id="story-title">Cerita kami</h2>
+          <p class="about-text__big" data-split>Pilih menu untuk menemani waktu sendiri, berkumpul bersama teman, atau <em>mengambil jeda</em> dari rutinitas.</p>
+          <p data-reveal>Di bar, kopi diracik dengan mesin espresso yang bisa kamu lihat langsung. Dari dapur, katsu, nasi goreng, dan camilan disajikan hangat.</p>
+          <p data-reveal>Di antaranya ada meja panjang dan kursi yang nyaman, untuk duduk selama yang kamu mau.</p>
+          <a href="produk.html" class="btn btn-gold btn-lg mt-2" data-reveal data-magnetic>Lihat menu <svg class="i-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0" aria-labelledby="values-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="kicker"><b>(02)</b> Yang kami siapkan</p>
+            <h2 class="section-title" id="values-title" data-split>Tiga hal, <em>setiap hari</em></h2>
+          </div>
+        </div>
+        <div class="values" data-reveal-group>
+          <div class="value-card"><span class="value-card__no">01</span><h3>Kopi untuk dinikmati</h3><p>Temukan pilihan kopi dan minuman untuk menemani harimu.</p></div>
+          <div class="value-card"><span class="value-card__no">02</span><h3>Comfort food</h3><p>Nikmati makanan dan camilan favorit yang disajikan hangat.</p></div>
+          <div class="value-card"><span class="value-card__no">03</span><h3>Suasana home cafe</h3><p>Tempat santai untuk mengambil jeda dan berkumpul.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0" aria-labelledby="gallery-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="kicker"><b>(03)</b> Galeri</p>
+            <h2 class="section-title" id="gallery-title" data-split>Sudut <em>Kopsteng</em></h2>
+          </div>
+          <p class="section-head__side">Bar, cangkir, dan piring yang menemani hari-hari kami.</p>
+        </div>
+        <div class="mosaic">
+          <button type="button" class="photo-trigger" data-clip data-cursor="Lihat" data-photo-src="foto kopsteng/bar.webp" data-photo-alt="Area bar dan mesin kopi Kopsteng" aria-label="Perbesar foto area bar Kopsteng"><img src="foto kopsteng/bar.webp" alt="" width="680" height="425" loading="lazy"></button>
+          <button type="button" class="photo-trigger" data-clip data-cursor="Lihat" data-photo-src="foto kopsteng/latte.webp" data-photo-alt="Dua cangkir caffe latte dengan latte art" aria-label="Perbesar foto caffe latte"><img src="foto kopsteng/latte.webp" alt="" width="382" height="510" loading="lazy"></button>
+          <button type="button" class="photo-trigger" data-clip data-cursor="Lihat" data-photo-src="foto kopsteng/americano.webp" data-photo-alt="Es americano dalam gelas berlogo Kopsteng" aria-label="Perbesar foto americano"><img src="foto kopsteng/americano.webp" alt="" width="382" height="510" loading="lazy"></button>
+          <button type="button" class="photo-trigger" data-clip data-cursor="Lihat" data-photo-src="foto kopsteng/mix platter.webp" data-photo-alt="Mix fries dengan dua saus" aria-label="Perbesar foto mix fries"><img src="foto kopsteng/mix platter.webp" alt="" width="403" height="510" loading="lazy"></button>
+          <button type="button" class="photo-trigger" data-clip data-cursor="Lihat" data-photo-src="foto kopsteng/ayam katsu.webp" data-photo-alt="Kenyang Enak Katsu dengan nasi dan salad" aria-label="Perbesar foto ayam katsu"><img src="foto kopsteng/ayam katsu.webp" alt="" width="235" height="352" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0" aria-labelledby="cta-title">
+      <div class="shell">
+        <div class="cta" data-reveal>
+          <p class="kicker"><b>(04)</b> Mampir</p>
+          <h2 class="cta__title" id="cta-title" data-split>Sampai jumpa <em>di Kopsteng.</em></h2>
+          <p>Buka setiap hari. Senin–Sabtu 09.00–23.00, Minggu 16.00–23.00.</p>
+          <div class="cta__actions">
+            <a class="btn btn-gold btn-lg" href="produk.html" data-magnetic>Lihat menu <svg class="i-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-glass btn-lg" href="kontak.html">Hubungi kami</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
